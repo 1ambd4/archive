@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src=./js/uc.js></script>
+    <script language=javascript>
+        //注意，这里的纯JavaScript的日期选择器文件uc.js，保存在/js路径下。
+        //实例化时第一个参数是input的name；第二个参数是value，设为"today"就是当天。
+        var date1 = new NtuCalendar("date", "2015-03-08");
+        date1.display();//直接显示JS日期选择器
+    </script>
+    <br><br>
+    <script language=javascript>
+        //灵活定制一些属性,再次显示JS日期选择器
+        //事实上直接到uc.js中修改默认属性值使用起来会更方便一些，里面有注释。
+        var date2 = new NtuCalendar();
+        date2.inputName = "date"; //input的name。
+        date2.inputValue = "today";  //input中显示客户机系统当前时间。
+        date2.inputSize = 10;  //input的size
+        date2.inputClass = "";  //input的class，这样你就能自己控制input的样式。
+        date2.color = "#000080";  //选择按钮、面板的边框以及日历中字的颜色。
+        date2.bgColor = "#ffdd66";  //选择按钮、面板的背景色。
+        date2.buttonWidth = 60;  //按钮宽度
+        date2.buttonWords = "选择日期";  //按钮显示的文字。
+        date2.canEdits = false;  //input是否可以输入
+        date2.hidesSelects = true;  //显增日期选择面板时是否隐藏页面中的select控件。
+        date2.display();
+    </script>
+</head>
+
+
+<body>
+<br>
+<hr>
+直接使用日期选择器：<br>
+<script language=javascript>date1.display();</script>
+<br>
+修饰后的日期选择器：<br>
+<script language=javascript>date2.display(); </script>
+<br>
+<hr>
+<br>
+<table border="1">
+    <tr>
+        <td>姓名</td>
+        <td>出生日期</td>
+        <td>专业</td>
+        <td>毕业日期</td>
+    </tr>
+    <tr>
+        <td>张小章</td>
+        <td>
+            <script language=javascript>date1.display();</script>
+        </td>
+        <td>李小理</td>
+        <td>
+            <script language=javascript>date2.display();</script>
+        </td>
+    </tr>
+</table>
+<br>
+纯JavaScript写的日期选择器（JS日历插件）希望大家喜欢。
+
+</body>
+</html>

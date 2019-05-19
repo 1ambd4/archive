@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function check() {
+            with (document.all) {
+                if (input1.value != input2.value) {
+                    alert("两次输入的密码不一致！")
+                    input1.value = "";
+                    input2.value = "";
+                } else
+                    document.forms[0].submit();
+            }
+        }
+    </script>
+
+</head>
+<body>
+<FORM METHOD=POST ACTION="">
+    请输入密码: <input type="password" id="input1"> <br>
+    请再次输入密码: <input type="password" id="input2">
+    <input type="button" value="提交" onclick="check()">
+</FORM>
+
+</body>
+</html>
