@@ -1,0 +1,29 @@
+<!DOCTYPE HTML">
+<html>
+  <head>
+    <title>postForm.html</title>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  
+  <body bgcolor="#FDF5E6">
+    <h1 align="center">用POST方法发送数据的表单</h1>
+    <form action="../../ShowParamtersServlet" method="post">
+     	学&nbsp;&nbsp;&nbsp;&nbsp;号： <input type="text" name="xh"><br/>
+    	姓&nbsp;&nbsp;&nbsp;&nbsp;名：  <input type="text" name="name"><br/>
+    	专&nbsp;&nbsp;&nbsp;&nbsp;业：  <input type="text" name="zy" value="network engineer"><br/>
+    	email：&nbsp;&nbsp;&nbsp;  <input type="text" name="email"><br/>
+    	联系电话：  <input type="text" name="tele"><br/>
+    	家庭住址：<textarea name="address" rows="3" cols="40"></textarea><br/>
+    	银行卡类型： <br/>
+    	<input type="radio" name="cardType" value="Visa">Visa<br/>
+    	<input type="radio" name="cardType" value="Amex">Amex<br/>
+    	<input type="radio" name="cardType" value="Discover">Discover<br/>
+    	<input type="radio" name="cardType" value="SmartCard">SmartCard<br/>
+    	银行卡号：&nbsp;&nbsp;&nbsp;<input type="password" name="cardNum"/><br/>
+    	重复输入卡号：<input type="password" name="cardNum"/><br/>
+    	<center><input type="submit" value="submit"></center>
+    </form>
+  </body>
+</html>
