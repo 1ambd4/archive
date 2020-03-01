@@ -1,0 +1,3 @@
+name: bukkit_plugin
+main: cn.lttzz.minecraft.bukkit.plugin.Plugin
+version: 0.1.0

@@ -34,3 +34,6 @@
 # Idea
 .idea/
 out/
+
+# eclipse
+bin/
